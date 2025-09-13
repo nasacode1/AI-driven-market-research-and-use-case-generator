@@ -67,3 +67,5 @@ if __name__ == "__main__":
     summary = agent_1_company_research(company)
     print("\n===== Company Summary =====")
     print(summary)
+    with open("company_summary.json", "w") as f:
+        f.write(summary)
